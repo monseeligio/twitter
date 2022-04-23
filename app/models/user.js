@@ -7,9 +7,28 @@ constructor(id,username,name,bio){
     this.datecreated= new Date()
     this.lastUpdate=new Date()
 }
+get getId(){
+    return this.id
+}
 get getUsername(){
     return this.username
 }
+get getName(){
+    return this.name
+}
+get getBio(){
+    return this.bio
+}
+get getDateCreated(){
+    return this.datecreated
+}
+get getLastUpdate(){
+    return this.lastUpdate
+}
+
+
+
+
 set setUsername(NewUsername){
     this.username=NewUsername
 }
