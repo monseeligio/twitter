@@ -32,8 +32,12 @@ describe ("prueba de jest",()=>{
 
 
     test("requerimiento 4 : agregando setters,",()=>{
-        const User=new user(1,"monseeligio", "monserrat","bio", "dateCreated", "lastUpdate")
+        const User=new user(1,"monseeligio", "monserrat","bio")
         User.setUsername = "monseeligio"
+        expect(User.username).toBe("monseeligio")
+        User.setBio="New bio"
+        expect(User.bio).toBe("New bio")
+
     })
 
 })

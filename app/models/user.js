@@ -26,11 +26,11 @@ get getLastUpdate(){
     return this.lastUpdate
 }
 
-
-
-
 set setUsername(NewUsername){
     this.username=NewUsername
+}
+set setBio(newBio){
+    this.bio=newBio
 }
 }
 module.exports=user
