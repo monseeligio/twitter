@@ -1,11 +1,11 @@
 class user{
-constructor(id,username,name,bio,datecreated, lasUpdate){
+constructor(id,username,name,bio){
     this.id=id
     this.username=username
     this.bio=bio
     this.name=name
-    this.datecreated=datecreated
-    this.lasUpdate=lasUpdate
+    this.datecreated= new Date()
+    this.lastUpdate=new Date()
 }
 get getUsername(){
     return this.username
